@@ -33,7 +33,7 @@ const WeatherBrief = () => {
         
             <h1 className="heading"><strong></strong></h1>
             <h1 className="subheading">Weather : {weather}</h1>
-            <h2 className="subheading-2">Temprature : {temp}K</h2>
+            <h2 className="subheading-2">Temprature : {temp}°C</h2>
             
         </div>
         </div>

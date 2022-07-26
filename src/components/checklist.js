@@ -1,6 +1,7 @@
 import { useState } from "react";
 const Checklist = () => {
 
+  //find if the checklist is checked or not
   const [checked, setChecked] = useState([]);
   const checkList = ["React Website - Web Applications", "3D model - Game Design"
   , "Products Requirement Doc - Portfolio", "Proposal - Ios & Android dev", "View lecture - Cross platform dev"  ];

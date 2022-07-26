@@ -15,26 +15,18 @@ const Home = () => {
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       console.log(error.message);
     }
   };
   return (
     <>
+     <Row>
+        <Col sm className="p-4 box mt-3 text-center">      <Calender /></Col>
+         <Col sm className="p-4 box mt-3 text-center">      <WeatherBrief /></Col>
 
-    <Row>
-      <Col sm className="p-4 box mt-3 text-center" >    <LineChart/>
-</Col>
-
-<Col sm className="p-4 box mt-3 ">    <CheckList />
-</Col>
-    </Row>
-
-      
-
-      <Row>
-        <Col sm className="p-4 box mt-3 text-center">
+<Col sm className="p-4 box mt-3 text-center">
             <div >
         Ola, What's up? <br />
         {user && user.email}
@@ -44,15 +36,16 @@ const Home = () => {
           Log out
         </Button>
       </div>    
-</Col>
-        <Col sm className="p-4 box mt-3 text-center">      <WeatherBrief />
-</Col>
+      </Col>
       </Row>
 
-      <Row>
-        <Col sm className="p-4 box mt-3 text-center">      <Calender />
-</Col>
-      </Row>
+    <Row>
+      <Col sm className="p-4 box mt-3 text-center" >    <LineChart/></Col>
+
+<Col sm className="p-4 box mt-3 ">    <CheckList /></Col>
+    </Row>
+
+    
 
     </>
   );

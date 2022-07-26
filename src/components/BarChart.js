@@ -20,6 +20,10 @@ const BarChart = () => {
   var apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 
+  //fetch data from coinranking api. 
+  //Note: in order to add the coin ranking api, we need to have a custom domain or proxy url.
+  //due to this it might not work in your browser, so to overcome this, open the console and click on CORS link. 
+  //You will be redirected to a webpage. Click on request temporary access and it will work.
   useEffect(() => {
     const fetchCoins = async () => {
       await fetch(`${proxyUrl}${baseUrl}`, {
