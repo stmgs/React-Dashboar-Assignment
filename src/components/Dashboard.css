@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dash-container {
+  display: flex;
+}
+
+.dash-nav-container {
+}
+
+.dash-content {
+  flex-direction: column;
+  background-color: white;
+  margin-left: 250px;
+  width: calc(100vw);
+}
+
+.dash-row1 {
+}
+
+@media screen and (max-width: 768) {
+  .dash-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dash-row1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dash-row2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

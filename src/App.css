@@ -1,0 +1,81 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.g-btn {
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+}
+.g-btn > div,
+.g-btn > div > svg {
+  width: 40px !important;
+  height: 38px !important;
+}
+
+.container-weather {
+  background: url("./assets/weather.jpg") no-repeat center center/cover;
+  color: white;
+  border: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.all__news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.news {
+  max-width: 350px;
+  padding: 30px;
+  border: 1px solid rgb(5, 100, 224);
+  border-radius: 5px;
+}
+
+.news__title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  font-size: 20px;
+}
+
+.head__text {
+  margin-top: 30px;
+}
+
+.news__desc {
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.news__author {
+  margin-right: 10px;
+  color: purple;
+}
+
+.news__published {
+  margin-right: 10px;
+}
+
+.news__source {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(122, 122, 122);
+}
