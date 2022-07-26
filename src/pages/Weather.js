@@ -16,6 +16,7 @@ const Weather = () => {
 
         let url ='https://api.openweathermap.org/data/2.5/weather?q='+location+'&units=metric&appid=4fcf4c059b8449a613174ea2e84f3e88'
 
+        //fetch weather data for barrie
         useEffect(() =>{
              axios
       .get(url)

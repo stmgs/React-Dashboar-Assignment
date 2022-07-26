@@ -12,6 +12,7 @@ import { auth } from "../firebase";
 const userAuthContext = createContext();
 
 export function UserAuthContextProvider({ children }) {
+  //state for user
   const [user, setUser] = useState({});
 
   function logIn(email, password) {
@@ -28,6 +29,7 @@ export function UserAuthContextProvider({ children }) {
     return signInWithPopup(auth, googleAuthProvider);
   }
 
+  //user state when page re-renders
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
       console.log("Auth", currentuser);
@@ -48,6 +50,7 @@ export function UserAuthContextProvider({ children }) {
   );
 }
 
+//custom hook useUserAuth: to get the user auth values 
 export function useUserAuth() {
   return useContext(userAuthContext);
 }

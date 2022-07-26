@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 
 const WeatherBrief = () => {
+
+    //various states/variables for weather
     const [weather, setWeather] = useState("Sunny")
     const [temp, setTemp] = useState(22.2)
     const [location, setLocation] = useState('Barrie')

@@ -11,6 +11,7 @@ function News() {
   const [data, setData] = useState();
   const apiKey = "08b403e85fe94d2d9d3418504f1d1803";
 
+  //fetch news data
   useEffect(() => {
     axios
       .get(

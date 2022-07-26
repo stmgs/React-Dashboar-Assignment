@@ -17,7 +17,7 @@ const BarChart = () => {
   const [chart, setChart] = useState({})
   var baseUrl = "https://api.coinranking.com/v2/coins/?limit=10";
   var proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  var apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+  var apiKey = "coinrankingdf58bdf571a78761aa034b5180f5ddfc59abee5bc3f73827";
 
 
   //fetch data from coinranking api. 
